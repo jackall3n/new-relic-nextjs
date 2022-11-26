@@ -26,7 +26,7 @@ export default function Home(props: any) {
     )
 }
 
-export function getServerSideProps() {
+export function getStaticProps() {
     return {
         props: {
             value: process.env.NODE_OPTIONS ?? null
